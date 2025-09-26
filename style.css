@@ -17,6 +17,22 @@ body {
 
 }
 
+nav {
+    position: relative;
+    a{
+        text-decoration: none;
+        color: white;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+        padding-bottom: 1rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    overflow: hidden;
+    height: 80px;
+    border-bottom: 2px solid #e7e7e7;
+}
+
 .left-nav {
     display: flex;
     align-items: center;
@@ -33,22 +49,6 @@ body {
     float: right;
 }
 
-nav {
-    position: relative;
-    a{
-        text-decoration: none;
-        color: white;
-        padding-left: 4rem;
-        padding-right: 4rem;
-        padding-bottom: 1rem;
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
-    overflow: hidden;
-    height: 80px;
-    border-bottom: 2px solid #e7e7e7;
-}
-
 .self_intro {
     display: flex;
     flex-direction: column;
@@ -57,16 +57,17 @@ nav {
     text-align: center;
     padding-left: 20%;
     padding-right: 20%;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 20rem;
 }
 
 #name {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 600;
 }
 
 #occupation {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 200;
     color: var(--secondary-color);
 }
@@ -76,8 +77,8 @@ nav {
     outline-color: black;
     outline-style: solid;
     outline-width: 2px;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -110,6 +111,12 @@ nav {
                 margin-right: 1rem;
             }
         }
+    }
+    .proficient{
+        color: darkgreen;
+    }
+    .intermediate{
+        color: rgb(128, 94, 1)
     }
 }
 
