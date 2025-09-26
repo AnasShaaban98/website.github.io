@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <span class="left-nav">
-            <a id="home" href="index.html">Home</a>
-        </span>
-        <span class="right-nav">
-            <a id="projects" href="projects.html">Projects</a>
-            <a id="contact" href="contact.html">Contact</a>
-            <a id="cv" href="cv.html">CV</a>
-        </span>
+    <nav class="navbar navbar-expand-lg navbar-dark text-center w-100">
+        <div class="container-fluid">
+        <a class="navbar-brand nav_section" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-lg-5"><a class="nav-link nav_section" id="knowledge" href="knowledge.html">Knowledge</a></li>
+            <li class="nav-item me-lg-5"><a class="nav-link nav_section" id="projects" href="projects.html">Projects</a></li>
+            <li class="nav-item me-lg-5"><a class="nav-link nav_section" id="contact" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link nav_section" id="cv" href="cv.html">CV</a></li>
+            </ul>
+        </div>
+        </div>
     </nav>
     <div class="main">
         <div class="under_construction">Under Construction - Check Back Soon!</div>
@@ -23,7 +31,7 @@
     <footer>
         <p>Made by <a href="https://github.com/yourusername">Anas Shaaban</a></p>
     </footer>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 </html>

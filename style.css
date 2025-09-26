@@ -18,35 +18,13 @@ body {
 }
 
 nav {
-    position: relative;
-    a{
-        text-decoration: none;
-        color: white;
-        padding-left: 3.5rem;
-        padding-right: 3.5rem;
-        padding-bottom: 1rem;
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
-    overflow: hidden;
-    height: 80px;
     border-bottom: 2px solid #e7e7e7;
 }
 
-.left-nav {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    height: 100%;
-    float: left;
-}
-
-.right-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    float: right;
+.nav_section{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .self_intro {
