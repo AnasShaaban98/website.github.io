@@ -1,7 +1,8 @@
 :root {
-    --main-color: #ffffff;
-    --secondary-color: #b9b9b9;
-    --background-color: #161a28;
+    --background-color: hsl(227, 29%, 10%);
+    --main-color: hsl(227, 39%, 13%);
+    --secondary-color: hsl(0, 0%, 73%);
+    --tertiary-color: hsl(227, 39%, 13%);
     --text-color: #ffffff;
     --font-family: 'Arial', sans-serif;
 }
@@ -17,17 +18,21 @@ body {
 
 }
 
+.main{
+    min-height: 90vh;
+}
+
 nav {
     border-bottom: 2px solid #e7e7e7;
 }
 
-.nav_section{
+.nav-section{
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-.self_intro {
+.self-intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +41,6 @@ nav {
     padding-left: 20%;
     padding-right: 20%;
     padding-top: 1.5rem;
-    padding-bottom: 20rem;
 }
 
 #name {
@@ -50,7 +54,7 @@ nav {
     color: var(--secondary-color);
 }
 
-#self_photo{
+#self-photo{
     border-radius: 10%;
     outline-color: black;
     outline-style: solid;
@@ -110,10 +114,61 @@ footer{
     border-top: 1px solid #e7e7e7;
 }
 
-.under_construction {
+.under-construction {
     color: green;
     text-align: center;
     padding: 1rem;
     font-size: 1.5rem;
     font-weight: 800;
+}
+
+.projects-section{
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    #projects-section-header{
+        font-size: 3rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    #projects-section-description{
+        font-size: 1.5rem;
+        font-weight: 200;
+        color: var(--secondary-color);
+    }
+}
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var();
+}
+
+.project{
+    border-radius: 1rem;
+    outline-width: .1rem;
+    outline-style: solid;
+    outline-color: var(--secondary-color);
+    border-width: 0;
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 25rem;
+    height: 14rem;
+    text-align: left;
+    background-color: var(--main-color);
+    .project-title{
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        border-bottom: 1px solid var(--secondary-color);
+    }
+    .project-description{
+        font-size: 1.2rem;
+        font-weight: 200;
+        color: var(--secondary-color);
+        margin-top: 0.5rem;
+    }
 }
