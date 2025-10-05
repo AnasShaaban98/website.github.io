@@ -7,9 +7,14 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+  <link href="cursor.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark text-center w-100">
+  <div class="cursor-wrapper">
+    <div class="cursor-circle"></div>
+    <div class="cursor-dot"></div>
+  </div>
+    <nav class="navbar navbar-expand-lg navbar-dark text-center w-100 fixed-top">
         <div class="container-fluid">
         <a class="navbar-brand nav-section" href="index.html">Home</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -26,12 +31,45 @@
         </div>
     </nav>
     <div class="main">
-        <div class="under-construction">Under Construction - Check Back Soon!</div>
-    </div>
+        <div class="form-container">
+            <div class="container mt-3">
+                <!-- make it bold and big and small if width is less than 768px -->
+                <h1 class="contact-header">Contact Me</h1>
+                <p class="mb-4">
+                    If you'd like to get in touch, use the form below to send me an email. I aim to get back to you within 24 hours.
+                </p>
+                <!-- form -->
+                <form 
+                    action="https://formspree.io/f/mvgwqwrz"
+                    method="POST"
+                    enctype="multipart/form-data"
+                    id="form">
+                    <!-- email -->
+                    <div class="form-outline mb-4 w-100 m-auto">
+                        <label class="form-label">Email:</label>
+                        <input type="email" name="email" class="form-control form-input" placeholder="Enter email" autocomplete="off" required>
+                    </div>
+                    <!-- message -->
+                    <div class="form-outline mb-4 w-100 m-auto">
+                        <label class="form-label">Message:</label>
+                        <textarea name="message" class="form-control form-input" rows="7" placeholder="Enter message" autocomplete="off" required></textarea>
+                    </div>
+                    <!-- <div class="form-outline mb-4 w-100 m-auto">
+                        <label class="form-label">File (optional):</label>
+                        <input type="file" name="upload" class="form-control form-input" placeholder="Choose file" autocomplete="off">
+                    </div> -->
+                    <!-- submit -->
+                    <div class="form-outline mb-4 w-100 m-auto">
+                        <input type="submit" name="submit" class="submit-form-button" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
     <footer>
         <p>Designed by <a href="https://github.com/yourusername">Anas Shaaban</a></p>
     </footer>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="cursor.js"></script>
 </body>
 </html>

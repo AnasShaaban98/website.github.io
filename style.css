@@ -267,6 +267,58 @@ footer{
     font-weight: 800;
 }
 
+.form-container{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    border-radius: 1rem;
+    outline-width: .1rem;
+    outline-style: solid;
+    outline-color: var(--secondary-color);
+    border-width: 0;
+    padding: 1rem;
+    margin: 0 auto;
+    width: 75%;
+    text-align: left;
+    background-color: var(--main-color);
+}
+
+.contact-header{
+    /* text-align: center; */
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .contact-header {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+/* when the input is focused */
+.form-input:focus {
+    outline-color: var(--tertiary-color);
+    box-shadow: 0 0 5rem .5rem var(--tertiary-color);
+}
+
+.submit-form-button{
+    width: 100%;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-weight: 600;
+    border: none;
+    border-radius: .3rem;
+    padding: .4rem 0;
+    cursor: pointer;
+
+    &:hover{
+        /* background-color: var(--tertiary-color); */
+        /* color: var(--main-color); */
+        outline-color: var(--tertiary-color);
+        box-shadow: 0 0 5rem .5rem var(--tertiary-color);
+    }
+}
+
 .projects-section{
     text-align: center;
     margin-bottom: 2rem;
