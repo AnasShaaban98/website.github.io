@@ -385,7 +385,6 @@ footer{
 .project-description-container{
     position: relative;
     margin: 0rem auto;
-    margin-bottom: 9rem;
     display: flex;
     width: 80%;
     height: 39rem;
@@ -405,6 +404,10 @@ footer{
     width: 50%;
     margin: 1rem;
     overflow: auto;
+}
+
+.project_container_separator{
+    margin: 10rem 0;
 }
 
 .project-video-container{
@@ -431,4 +434,17 @@ footer{
     width: 100%;
     /* height: 100%; */
     /* object-fit: contain; */
+}
+
+.link-container{
+    text-align: center;
+    margin-top: 1rem;
+    text-decoration: underline;
+    color: var(--tertiary-color);
+}
+
+.download-link{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--tertiary-color);
 }
