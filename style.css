@@ -1,8 +1,8 @@
 :root {
-    --background-color: hsl(227, 29%, 10%);
-    --main-color: hsl(227, 49%, 13%);
-    --secondary-color: hsl(0, 0%, 73%);
-    --tertiary-color: hsl(227, 29%, 63%);
+    --background-color: hsl(227, 29%, 12%);
+    --main-color: hsl(227, 49%, 15%);
+    --secondary-color: hsl(0, 0%, 75%);
+    --tertiary-color: hsl(227, 29%, 65%);
     --quaternary-color: hsl(227, 19%, 2%);
     --text-color: #ffffff;
     --font-family: 'Arial', sans-serif;
@@ -79,11 +79,11 @@ nav {
 }
 
 #computer-software-header{
-    margin-top: 5rem;
+    margin-top: 5.5rem;
     text-align: center;
     font-size: 3.5rem;
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .computer-softwares{
@@ -115,7 +115,7 @@ nav {
     margin: 1.5rem 4rem;
     text-align: center;
     background-color: var(--main-color);
-    box-shadow: .5rem .5rem .1rem var(--quaternary-color);
+    box-shadow: 1rem 1rem .2rem var(--quaternary-color);
     img{
         height: 6rem;
         width: 6rem;
@@ -124,6 +124,10 @@ nav {
         margin-right: 1rem;
         justify-self: center;
         align-self: center;
+    }
+    &:hover{
+        /* animation: zoomIn 0.3s forwards; */
+        box-shadow: .5rem .5rem .4rem var(--quaternary-color), 0 0 8rem 1.2rem var(--tertiary-color);
     }
 }
 
@@ -187,7 +191,10 @@ nav {
     background-color: var(--main-color);
     font-weight: 700;
     font-size: 2.8rem;
-    box-shadow: .5rem .5rem .1rem var(--quaternary-color);
+    box-shadow: 1rem 1rem .2rem var(--quaternary-color);
+    &:hover{
+        box-shadow: .5rem .5rem .4rem var(--quaternary-color), 0 0 8rem 1.2rem var(--tertiary-color);
+    }
 }
 
 .human-language-level{
@@ -281,6 +288,7 @@ footer{
     width: 75%;
     text-align: left;
     background-color: var(--main-color);
+    box-shadow: 2.1rem 2.1rem .2rem .1rem var(--quaternary-color);
 }
 
 .contact-header{
