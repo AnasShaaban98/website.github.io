@@ -1,11 +1,13 @@
 :root {
     --background-color: hsl(227, 31%, 13%);
-    --name-color: hsl(215, 79%, 69%);
-    --main-color: hsl(227, 49%, 18%);
-    --main-color-hover: hsl(227, 49%, 24%);
+    --name-color: hsl(215, 89%, 65%);
+    --occupation-color: hsl(215, 15%, 81%);
+    --main-color: hsl(227, 49%, 20%);
+    --main-color-light: hsl(227, 49%, 26%);
     --secondary-color: hsl(0, 0%, 75%);
     --tertiary-color: hsl(227, 31%, 69%);
-    --tertiary-color-hover: hsl(227, 31%, 75%);
+    --tertiary-color-light: hsl(227, 31%, 75%);
+    --tertiary-color-dark: hsl(227, 31%, 53%);
     --quaternary-color: hsl(227, 19%, 2%);
     --quinary-color: hsl(227, 19%, 8%);
     --text-color: #ffffff;
@@ -60,7 +62,7 @@ nav {
 #occupation {
     font-size: 3rem;
     font-weight: 200;
-    color: var(--secondary-color);
+    color: var(--occupation-color);
 }
 
 @media (max-width: 768px) {
@@ -110,6 +112,7 @@ nav {
 
 .computer-software{
     border-radius: 2rem;
+    border: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,8 +135,8 @@ nav {
     }
     &:hover{
         /* animation: zoomIn 0.3s forwards; */
-        box-shadow: .4rem .4rem .4rem var(--quaternary-color), 0 0 8rem 1.2rem var(--tertiary-color-hover);
-        background-color: var(--main-color-hover);
+        box-shadow: .4rem .4rem .4rem var(--quaternary-color), 0 0 8rem 1.2rem var(--tertiary-color-light);
+        background-color: var(--main-color-light);
     }
 }
 
@@ -168,8 +171,8 @@ nav {
 .human-languages{
     margin-top: 3rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     ul{
         margin-left: 10%;
         margin-right: 10%;
@@ -199,9 +202,9 @@ nav {
     font-size: 2.8rem;
     box-shadow: 1rem 1rem .2rem var(--quaternary-color);
     &:hover{
-        box-shadow: .4rem .4rem .4rem var(--quaternary-color), 0 0 8rem 1.2rem var(--tertiary-color-hover);
-        background-color: var(--main-color-hover);
-        color: var(--tertiary-color-hover);
+        box-shadow: .4rem .4rem .4rem var(--quaternary-color), 0 0 8rem 1.2rem var(--tertiary-color-light);
+        background-color: var(--main-color-light);
+        color: var(--tertiary-color-light);
     }
 }
 
@@ -296,7 +299,7 @@ footer{
     width: 75%;
     text-align: left;
     background-color: var(--main-color);
-    box-shadow: 2.1rem 2.1rem .2rem .1rem var(--quaternary-color);
+    box-shadow: 1.7rem 1.7rem .2rem .1rem var(--quaternary-color);
 }
 
 .contact-header{
@@ -314,7 +317,7 @@ footer{
 /* when the input is focused */
 .form-input:focus {
     outline-color: var(--tertiary-color);
-    box-shadow: 0 0 5rem .5rem var(--tertiary-color-hover);
+    box-shadow: 0 0 5rem .5rem var(--tertiary-color-light);
 }
 
 .submit-form-button{
@@ -331,7 +334,7 @@ footer{
         /* background-color: var(--tertiary-color); */
         /* color: var(--main-color); */
         outline-color: var(--tertiary-color);
-        box-shadow: 0 0 5rem .5rem var(--tertiary-color-hover);
+        box-shadow: 0 0 5rem .5rem var(--tertiary-color-light);
     }
 }
 
@@ -353,9 +356,10 @@ footer{
 .projects{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80%;
 }
 
 .project{
@@ -363,24 +367,41 @@ footer{
     outline-width: .1rem;
     outline-style: solid;
     outline-color: var(--secondary-color);
-    border-width: 0;
     padding: 1rem;
-    margin: 1rem auto;
-    width: 25rem;
-    height: 14rem;
-    text-align: left;
+    margin: 1rem 3rem;
+    margin-bottom: 6.2rem;
+    width: 19rem;
+    height: 26.8rem;
+    text-align: center;
     background-color: var(--main-color);
+    box-shadow: 1.2rem 1.2rem .2rem var(--quaternary-color);
     .project-title{
-        font-size: 2rem;
+        font-size: 1.7rem;
         font-weight: 600;
-        margin-bottom: 0.5rem;
-        border-bottom: 1px solid var(--secondary-color);
+        margin-top: 1rem;
+        border-top: 1px solid var(--secondary-color);
+        padding-top: .5rem;
     }
     .project-description{
+        text-align: left;
         font-size: 1.2rem;
         font-weight: 200;
         color: var(--secondary-color);
-        margin-top: 0.5rem;
+    }
+    .project-image{
+        width: 70%;
+        object-fit: contain;
+        border-radius: .5rem;
+    }
+    &:hover{
+        box-shadow: .5rem .5rem .4rem var(--quaternary-color), 0 0 8rem 1.2rem var(--tertiary-color-light);
+        background-color: var(--main-color-light);
+    }
+}
+
+@media (max-width: 1200px) {
+    .projects{
+        width: 90%;
     }
 }
 
@@ -407,7 +428,7 @@ footer{
     padding: 1.5%;
     border-radius: 2rem;
     background-color: var(--main-color);
-    box-shadow: .5rem .5rem .1rem var(--quaternary-color);
+    box-shadow: 1.9rem 1.9rem .2rem .1rem var(--quaternary-color);
 }
 
 .project-logo{
@@ -435,7 +456,7 @@ footer{
     position: relative;
     border-radius: 2rem;
     background-color: var(--main-color);
-    box-shadow: .5rem .5rem .1rem var(--quaternary-color);
+    box-shadow: 1.9rem 1.9rem .2rem .1rem var(--quaternary-color);
 }
 
 .project_video_title{
@@ -454,7 +475,7 @@ footer{
 
 .link-container{
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 3.5rem;
     text-decoration: underline;
     color: var(--tertiary-color);
 }
@@ -462,5 +483,8 @@ footer{
 .download-link{
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--tertiary-color);
+    color: var(--tertiary-color-);
+    &:hover{
+        color: var(--tertiary-color-dark);
+    }
 }
