@@ -1,6 +1,6 @@
 :root {
     --background-color: hsl(227, 31%, 13%);
-    --name-color: hsl(215, 89%, 65%);
+    --name-color: hsl(215, 91%, 65%);
     --occupation-color: hsl(215, 15%, 81%);
     --main-color: hsl(227, 49%, 20%);
     --main-color-light: hsl(227, 49%, 26%);
@@ -123,6 +123,7 @@ nav {
     margin: 1.5rem 4rem;
     text-align: center;
     background-color: var(--main-color);
+    outline: .1rem solid var(--secondary-color);
     box-shadow: 1rem 1rem .2rem var(--quaternary-color);
     img{
         height: 6rem;
@@ -194,6 +195,7 @@ nav {
     position: relative;
     width: 14rem;
     height: 9rem;
+    outline: .1rem solid var(--secondary-color);
     margin-top: 0.5rem;
     border-radius: 2rem;
     color: var(--tertiary-color);
@@ -365,9 +367,7 @@ footer{
 
 .project{
     border-radius: 1rem;
-    outline-width: .1rem;
-    outline-style: solid;
-    outline-color: var(--secondary-color);
+    outline: .1rem solid var(--secondary-color);
     padding: 1rem;
     margin: 1rem 3rem;
     margin-bottom: 6.2rem;
@@ -429,6 +429,7 @@ footer{
     padding: 1.5%;
     border-radius: 2rem;
     background-color: var(--main-color);
+    outline: .1rem solid var(--secondary-color);
     box-shadow: 1.9rem 1.9rem .2rem .1rem var(--quaternary-color);
 }
 
@@ -450,13 +451,13 @@ footer{
 
 .project-video-container{
     margin: 0rem auto;
-    display: flex;
     width: 80%;
-    height: 100%;
-    padding: 1.5%;
     position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
     border-radius: 2rem;
     background-color: var(--main-color);
+    outline: .1rem solid var(--secondary-color);
     box-shadow: 1.9rem 1.9rem .2rem .1rem var(--quaternary-color);
 }
 
@@ -468,10 +469,14 @@ footer{
 }
 
 .project-video{
-    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
-    /* height: 100%; */
-    /* object-fit: contain; */
+    height:100%;
+    margin: auto;
 }
 
 .link-container{
