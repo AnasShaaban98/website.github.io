@@ -445,6 +445,33 @@ footer{
     overflow: auto;
 }
 
+@media (max-width: 768px) {
+    .project-description-container{
+        flex-direction: column;
+        height: auto;
+    }
+    .project-logo, .project_description{
+        width: 90%;
+        margin: 1rem auto;
+    }
+}
+
+.dropdown-menu-container{
+    position: absolute;
+    top: 20%;
+    left: 4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
 .project_container_separator{
     margin: 10rem 0;
 }
