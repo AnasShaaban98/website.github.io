@@ -9,8 +9,8 @@ for (let i = 0; i < humanLanguages.length; i++) {
     });
 }
 
-computerSoftware = document.getElementsByClassName('computer-software');
-computerSoftwareLabels = document.getElementsByClassName('computer-software-label');
+computerSoftware = document.getElementsByClassName('computer-skill');
+computerSoftwareLabels = document.getElementsByClassName('computer-skill-label');
 for (let i = 0; i < computerSoftware.length; i++) {
     computerSoftware[i].addEventListener('mouseover', function() {
         computerSoftwareLabels[i].style.display = "block";

@@ -85,7 +85,7 @@ nav {
     object-fit: cover;
 }
 
-#computer-software-header{
+#computer-skill-header{
     margin-top: 5.5rem;
     text-align: center;
     font-size: 3.5rem;
@@ -93,7 +93,7 @@ nav {
     margin-bottom: 2rem;
 }
 
-.computer-softwares{
+.computer-skills{
     text-align: center;
     ul{
         position: flex;
@@ -110,7 +110,7 @@ nav {
     }
 }
 
-.computer-software{
+.computer-skill{
     border-radius: 2rem;
     border: 0;
     display: flex;
@@ -142,7 +142,7 @@ nav {
 }
 
 
-.computer-software-label{
+.computer-skill-label{
     position: relative;
     display: none;
     margin-top: .3rem;
