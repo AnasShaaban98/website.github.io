@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS | Sonimarto</title>
+	<link rel="icon" type="image/png" href="images/site_logo.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  <link href="cursor.css" rel="stylesheet">
+</head>
+<body>
+  <div class="cursor-wrapper">
+    <div class="cursor-circle"></div>
+    <div class="cursor-dot"></div>
+  </div>
+    <nav class="navbar navbar-expand-lg navbar-dark text-center w-100">
+        <div class="container-fluid">
+        <a class="navbar-brand nav-section" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item me-lg-5"><a class="nav-link nav-section" id="skills" href="skills.html">Skills</a></li>
+                <li class="nav-item me-lg-5"><a class="nav-link nav-section" id="projects" href="projects.html">Projects</a></li>
+                <li class="nav-item me-lg-5"><a class="nav-link nav-section" id="contact" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link nav-section" id="cv" href="files/cv.pdf">CV</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="project-header-container">
+            <h2 class="project-header-title">Sonimarto</h2>
+            <p class="project-header-description">A production SaaS platform that combines AI agents and web scrapers to give resellers defensible price intelligence across 20+ marketplace APIs.</p>
+        </div>
+        <div class="project-description-container">
+            <div id="sonimarto-carousel" class="carousel slide project-carousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#sonimarto-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Sonimarto logo"></button>
+                    <button type="button" data-bs-target="#sonimarto-carousel" data-bs-slide-to="1" aria-label="Search results, products view"></button>
+                    <button type="button" data-bs-target="#sonimarto-carousel" data-bs-slide-to="2" aria-label="Search results, brands view"></button>
+                    <button type="button" data-bs-target="#sonimarto-carousel" data-bs-slide-to="3" aria-label="Brand page"></button>
+                    <button type="button" data-bs-target="#sonimarto-carousel" data-bs-slide-to="4" aria-label="Product page"></button>
+                    <button type="button" data-bs-target="#sonimarto-carousel" data-bs-slide-to="5" aria-label="Listings page"></button>
+                    <button type="button" data-bs-target="#sonimarto-carousel" data-bs-slide-to="6" aria-label="Price comparison"></button>
+                    <button type="button" data-bs-target="#sonimarto-carousel" data-bs-slide-to="7" aria-label="Listing information comparison"></button>
+                    <button type="button" data-bs-target="#sonimarto-carousel" data-bs-slide-to="8" aria-label="Creating a product listing"></button>
+                    <button type="button" data-bs-target="#sonimarto-carousel" data-bs-slide-to="9" aria-label="Collections dashboard"></button>
+                    <button type="button" data-bs-target="#sonimarto-carousel" data-bs-slide-to="10" aria-label="Product history"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="carousel-logo-img" src="./images/projects_logos/sonimarto_logo.png" alt="Sonimarto logo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/sonimarto_screenshots/results-products.jpeg" alt="Sonimarto search results, products view">
+                        <div class="carousel-caption"><p>Search results — products view</p></div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/sonimarto_screenshots/results-brands.jpeg" alt="Sonimarto search results, brands view">
+                        <div class="carousel-caption"><p>Search results — brands view</p></div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/sonimarto_screenshots/brand.jpeg" alt="Sonimarto brand page">
+                        <div class="carousel-caption"><p>Brand page</p></div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/sonimarto_screenshots/product.jpeg" alt="Sonimarto product page">
+                        <div class="carousel-caption"><p>Product page</p></div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/sonimarto_screenshots/listings.jpeg" alt="Sonimarto listings page">
+                        <div class="carousel-caption"><p>Listings page</p></div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/sonimarto_screenshots/compare-prices.jpeg" alt="Sonimarto price comparison across marketplaces">
+                        <div class="carousel-caption"><p>Price comparison across marketplaces</p></div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/sonimarto_screenshots/compare-information.jpeg" alt="Sonimarto listing information comparison">
+                        <div class="carousel-caption"><p>Listing information comparison</p></div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/sonimarto_screenshots/create-listing.jpeg" alt="Creating a product listing on Sonimarto">
+                        <div class="carousel-caption"><p>Creating a product listing</p></div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/sonimarto_screenshots/collections.jpeg" alt="Sonimarto collections dashboard">
+                        <div class="carousel-caption"><p>Collections dashboard</p></div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/sonimarto_screenshots/history-products-view.jpeg" alt="Sonimarto product history">
+                        <div class="carousel-caption"><p>Product history</p></div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#sonimarto-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#sonimarto-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="project_description">
+                Sonimarto is a production SaaS platform that helps e-commerce resellers buy low and sell high with confidence. Users upload product photos and titles, and the platform's AI agents identify each item, match it across more than twenty marketplace APIs, and return a defensible estimated market value — backed by the underlying listings and a transparent confidence score. Originally prototyped as a Python command-line tool, it has since grown into a fully deployed web platform serving real users at <a href="https://sonimarto.com" target="_blank" rel="noopener">sonimarto.com</a>.<br><br>
+                Key Features:<br>
+                <ul>
+                    <li><b>Eight AI Agents, Five LLM Providers:</b> A multi-agent pipeline of specialised LLM agents — item matcher, photo identifier, description generator, brand specialist, title cleaner, quality assessor and more — classifies and enriches every product. Provider-aware fallback chains across five LLM providers, with curated prompt libraries and stricter-prompt retries, keep results stable even when a provider fails.</li>
+                    <li><b>Multi-Marketplace Integration:</b> 20 REST APIs alongside XML-based and custom-protocol services, all normalised through a single adapter layer — with fallback data providers that keep data flowing when a marketplace is unavailable.</li>
+                    <li><b>Statistical Valuation Engine:</b> Sold-anchored quartile distributions, an accuracy-penalised matcher that filters ambiguous price histories, per-marketplace fee models and a self-improving sale-duration predictor produce estimates with a transparent, data-backed confidence score.</li>
+                    <li><b>SaaS Billing, Quotas &amp; Analytics:</b> Stripe-powered subscription tiers with a credits system for API-heavy searches, in-app notifications, and privacy-first first-party analytics (cookie-free, hashed IPs) with scroll, heatmap and dwell-time insights surfaced in a live admin dashboard.</li>
+                    <li><b>Production Deployment:</b> Dockerised on a hardened single-host droplet — five Gunicorn workers behind nginx load balancing, Redis caching, SQLite storage, health checks with automatic restart, rate limiting and uptime monitoring.</li>
+                </ul>
+                Technologies &amp; Skills:<br>
+                <ul>
+                    <li>Languages: Python, JavaScript, HTML/CSS</li>
+                    <li>Backend: FastAPI, Gunicorn, REST API design</li>
+                    <li>AI: Multi-agent LLM pipelines, prompt engineering, computer vision</li>
+                    <li>Integrations: 20+ marketplace &amp; data APIs (REST, XML and custom protocols)</li>
+                    <li>Payments &amp; Authentication: Stripe subscriptions, Google OAuth, WebAuthn</li>
+                    <li>Data: SQLite, Redis caching</li>
+                    <li>DevOps: Docker, nginx, rate limiting, health checks, uptime monitoring</li>
+                    <li>Status: Live in production at <a href="https://sonimarto.com" target="_blank" rel="noopener">sonimarto.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Designed by Anas Shaaban</p>
+    </footer>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="fullscreen.js"></script>
+    <script src="cursor.js"></script>
+</body>
+</html>

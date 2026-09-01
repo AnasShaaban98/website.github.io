@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS | UIO Sequence Generation</title>
+	<link rel="icon" type="image/png" href="images/site_logo.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  <link href="cursor.css" rel="stylesheet">
+</head>
+<body>
+  <div class="cursor-wrapper">
+    <div class="cursor-circle"></div>
+    <div class="cursor-dot"></div>
+  </div>
+    <nav class="navbar navbar-expand-lg navbar-dark text-center w-100">
+        <div class="container-fluid">
+        <a class="navbar-brand nav-section" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item me-lg-5"><a class="nav-link nav-section" id="skills" href="skills.html">Skills</a></li>
+                <li class="nav-item me-lg-5"><a class="nav-link nav-section" id="projects" href="projects.html">Projects</a></li>
+                <li class="nav-item me-lg-5"><a class="nav-link nav-section" id="contact" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link nav-section" id="cv" href="files/cv.pdf">CV</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="project-header-container">
+            <h2 class="project-header-title">UIO Sequence Generation</h2>
+            <p class="project-header-description">14 novel algorithms for constructing Unique Input/Output (UIO) sequences in deterministic finite state machines — genetic, vectorised and CUDA-parallel variants — validated across 245 FSMs.</p>
+        </div>
+        <div class="project-description-container">
+            <img class="project-logo" src="./images/projects_logos/uio_logo.png" alt="UIO Sequence Generation Logo">
+            <div class="project_description">
+                This project tackles a classic problem in conformance testing: finding a Unique Input/Output (UIO) sequence for every state of a deterministic finite state machine (FSM) — a short input sequence whose output signature identifies that state unambiguously. UIO sequences underpin protocol and hardware testing, but computing them for large machines is computationally hard. I designed and implemented 14 novel algorithms — including population-based genetic variants — and benchmarked them against baseline methods on large machines, achieving up to 5× speedup on FSMs with 2,500+ states. The full methodology and findings are documented in a <a href="files/report_updated.pdf">12,000-word technical report (PDF)</a>.<br><br>
+                Key Features:<br>
+                <ul>
+                    <li><b>14 Novel Algorithms:</b> Designed and implemented fourteen algorithms for UIO sequence construction, including genetic/evolutionary variants that evolve candidate sequences as populations of chromosomes, scored against the full state set in a single pass.</li>
+                    <li><b>Vectorised NumPy/PyTorch Core:</b> Replaced per-state Python loops with vectorised tensor operations, eliminating interpreter overhead and enabling batch chromosome evaluation across thousands of states simultaneously.</li>
+                    <li><b>Parallel &amp; GPU Variants:</b> Engineered multithreaded versions of every algorithm using thread pools, shared work queues and lock-based synchronisation, plus CUDA acceleration via PyTorch, to exploit multi-core CPU and GPU architectures.</li>
+                    <li><b>Comprehensive Empirical Study:</b> Evaluated all methods across 245 FSMs of up to 15,000 states and 1,000 inputs/outputs, isolating scalability with respect to states, inputs and outputs independently.</li>
+                    <li><b>Results:</b> Up to 5× speedup over baseline methods on large FSMs, with the findings and methodology documented in a 12,000-word technical report.</li>
+                </ul>
+                Technologies &amp; Skills:<br>
+                <ul>
+                    <li>Language: Python</li>
+                    <li>Numerical Computing: NumPy, PyTorch</li>
+                    <li>Acceleration: CUDA (GPU), multithreading — thread pools, shared work queues, lock-based synchronisation</li>
+                    <li>Algorithms: Genetic/evolutionary computation, FSM search algorithms</li>
+                    <li>Theory: Deterministic finite state machines, UIO sequences, conformance testing</li>
+                    <li>Evaluation: Large-scale benchmarking across 245 FSMs, statistical scalability analysis</li>
+                    <li>Documentation: 12,000-word technical report</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Designed by Anas Shaaban</p>
+    </footer>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="cursor.js"></script>
+</body>
+</html>
